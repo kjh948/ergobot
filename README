@@ -1,0 +1,1 @@
+ffmpeg -i ballad.mp3 -acodec pcm_s16le -ac 1 -ar 44100 ballad.wav
