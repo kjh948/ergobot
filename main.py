@@ -9,14 +9,23 @@ from poppy_ergo_jr.primitives.dance import Dance
 
 
 #robot = PoppyErgoJr(simulator='poppy-simu')
-robot = PoppyErgoJr(config='config_new.json')
-dance = Dance(robot)
-dance.start()
+robot = PoppyErgoJr(config='config.json')
+# dance = Dance(robot)
+# dance.start()
 
-# breathing = IdleBreathing(robot, 1.)
-# breathing.start()
+breathing = IdleBreathing(robot, 1.)
+c = CuriousPosture(robot,1.)
 
-# c = CuriousPosture(robot,1.)
+for i in [11,1,1]:
+    breathing.start()
+    breathing.stop()
+    c.start()
+    c.stop()
+
+for i in [1,2,3,4,5,6]:
+    breathing.start()
+    breathing.stop()
+    
 # c.start()
 
 #robot.dance.stop()
