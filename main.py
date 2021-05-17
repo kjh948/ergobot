@@ -10,7 +10,7 @@ from poppy_ergo_jr.primitives.dance import Dance
 
 #robot = PoppyErgoJr(simulator='poppy-simu')
 robot = PoppyErgoJr(config='config_new.json',use_snap=True)
-dance = Dance(robot)
+# dance = Dance(robot)
 # dance.start()
 # dance.stop()
 
